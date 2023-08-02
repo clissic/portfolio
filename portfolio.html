@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPC Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#techs">TECHS</a></li>
+        <li><a href="#socials">SOCIALS</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div id="linkedin-avatar">
+        <img src="./linkedin-avatar.jpg" alt="perfil">
+    </div>
+    <h1 id="about" class="t1">Joaquín Pérez Coria</h1>
+    <h3 class="t3" title="Soon...">{Web Developer}</h3>
+    <div class="prof-description">
+        <p>My name is Joaquín Pérez Coria. I'm studying Web Develpment at <a href="https://ceibal.edu.uy/" target="_blank">Ceibal</a> on a program called <a href="https://jovenesaprogramar.edu.uy/" target="_blank">"Jovenes a Programar"</a>, so by now I have cero experience but plenty motivation for learning. At the moment, I'm working for the Uruguayan Navy in projects related to port security and protection.</p>
+    </div>
+    <div id="techs">
+        <h2 class="t2">TECHS I'M STUDYING:</h2>
+        <table>
+            <thead>
+                <th><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img class="tech-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html5"></a></th>
+                <th><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank"><img class="tech-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="css3"></a></th>
+                <th><a href="https://www.w3schools.com/js/" target="_blank"><img class="tech-img" src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png" alt="javascript"></a></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5 is a markup language used for structuring and presenting content on the web. It introduces new elements and features that enhance multimedia support, graphics, and interactivity. HTML5 enables the creation of modern, responsive websites with improved semantics, multimedia integration, and offline capabilities.</td>
+                    <td>CSS3 is the latest version of Cascading Style Sheets, a language used to style and format the presentation of web documents. It introduces advanced selectors, visual effects, and flexible layout options, enabling developers to create visually appealing and responsive designs with gradients, shadows, transitions, and more.</td>
+                    <td>JavaScript is a programming language used for adding interactivity and dynamic functionality to websites. It allows developers to manipulate web page elements, respond to user actions, and communicate with servers. JavaScript is widely used for front-end web development and is supported by all modern web browsers.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="socials">
+        <h2 class="t2">MY SOCIAL MEDIA:</h2>
+        <div class="social-media-icons">
+            <a href="https://github.com/Clissic" target="_blank"><img class="social-media-icon" src="./img/gh.png" alt="github"></a>
+            <a href="https://www.instagram.com/joaco.perez.coria/" target="_blank"><img class="social-media-icon" src="./img/ig.png" alt="instagram"></a>
+            <a href="https://wa.me/+59898511770" target="_blank"><img class="social-media-icon" src="./img/wp.png" alt="whatsapp"></a>
+        </div>
+    </div>
+    <div id="works">
+        <h2 id="work" class="t2">MY WORK:</h2>
+        <div class="meme-img">
+            <img src="./img/This-Is-Where-Id-Put-My-Trophy-If-I-Had-One.jpg" alt="">
+        </div>
+    </div>
+    <div id="contact">
+        <h2 class="t2">CONTACT ME:</h2>
+        <form action="mailto:joaquin.perez.coria@gmail.com" method="post">
+            <div class="input-v1">
+                <label for="name">Name: </label>
+                <input type="text" name="name">
+            </div>
+            <div class="input-v1">
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+            </div>
+            <div class="input-textarea">
+                <label for="body">Body: </label>
+                <textarea name="body" cols="80" rows="10" placeholder="Let me know what you need..."></textarea>
+            </div>
+            <div class="input-radio">
+                <label for="area">Area: </label>
+                <p><input type="radio" name="area"> Web design.</p>
+                <p><input type="radio" name="area"> Web development.</p>
+                <p><input type="radio" name="area" id=""> Mentorship.</p>
+            </div>
+            <div class="input-checkbox">
+                <p><input type="checkbox" name="accept"> I accept to be contacted by JPC by email for further interactions.</p>
+            </div>
+            <div class="submit-cont">
+                <button type="submit" id="submit-btn">SEND</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Made by JPC® <a href="#about">(me)</a>.</p>
+    </footer>
+</body>
+</html>
