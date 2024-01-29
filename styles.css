@@ -272,8 +272,15 @@ body {
   height: auto;
 }
 
+.end-line {
+  height: 2px;
+  width: 90%;
+  margin: auto;
+  background-image: radial-gradient(circle, #435a97, #3f558d, #3c4f83, #384a7a, #354570, #314067, #2e3b5e, #2a3655, #26304b, #212a42, #1d2538, #191f2f);
+}
+
 footer {
-  margin: 10vh 0vw 3vh 0vw;
+  margin: 5vh 0vw 3vh 0vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -350,7 +357,7 @@ footer {
 }
 
 #contact {
-    margin: auto;
+    margin: 0 auto 10vh auto ;
     text-align: start;
 }
 
