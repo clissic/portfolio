@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  color: whitesmoke;
+  background-color: #8d6019;
+}
+
 body {
   background-image: linear-gradient(to bottom, #000000, #000000, #10090d, #181118, #1b1823, #191f2f, #191f2f);;
   position: relative;
