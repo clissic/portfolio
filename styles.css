@@ -96,8 +96,8 @@ body {
   border-radius: 30px;
 }
 
-#menu img {
-  width: 40px;
+#menu a img {
+  width: 2.5rem;
 }
 
 #menu ul {
