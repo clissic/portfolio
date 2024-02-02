@@ -647,3 +647,353 @@ footer {
   display: flex;
   justify-content: end;
 }
+
+@media (max-width: 1024px) {
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 2rem;
+    width: 80%;
+    height: 5rem;
+    box-shadow: 0px 0px 15px #101010;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+    border-radius: 30px;
+  }
+
+  #about {
+    margin-top: -10vh;
+  }
+
+  .prof-description {
+    width: 80%;
+    margin: auto;
+    text-align: justify !important;
+  }
+
+  .certs-exp-div {
+    width: 100%;
+    margin: 6vh 0 6vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certs-div, .exp-div {
+    width: 90%;
+  }
+
+  .exp-subdiv {
+    margin-bottom: 5vh;
+  }
+
+  .vertical-gap {
+    width: 90vw;
+    height: 2px;
+    background-image: linear-gradient(to right, #120b10, #3b222b, #69383e, #975249, #bf734c, #c2734e, #c47251, #c77253, #a05355, #713c4d, #41283a, #1a151e);
+  }
+
+  .work-div-card {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right bottom, #1b1721, #1b1823, #1b1925, #1b1a27, #1b1b29, #1b1b29, #1b1b29, #1b1b29, #1b1a27, #1b1925, #1b1823, #1b1721);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #101010;
+    transition: 1s;
+    padding: 1rem;
+    width: 40%;
+  }
+
+  .t2 {
+    text-align: center;
+    margin: 6vh 0 6vh 0;
+  }
+
+  #contact {
+    margin: 0 auto 8vh auto ;
+    text-align: start;
+  }
+
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-subdiv {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #main-img {
+    background-image: url(./img/code-wp.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  #about {
+    margin-top: -10vh;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0rem;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 0px 15px #101010;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+    border-radius: 0px;
+  }
+
+  #menu a {
+    font-size: small;
+  }
+
+  #menu img {
+    width: 2rem;
+  }
+
+  .prof-description {
+    width: 80%;
+    margin: auto;
+    text-align: justify !important;
+  }
+
+  .certs-exp-div {
+    width: 100%;
+    margin: 6vh 0 6vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certs-div, .exp-div {
+    width: 90%;
+  }
+
+  .exp-subdiv {
+    margin-bottom: 5vh;
+  }
+
+  .vertical-gap {
+    width: 90vw;
+    height: 2px;
+    background-image: linear-gradient(to right, #120b10, #3b222b, #69383e, #975249, #bf734c, #c2734e, #c47251, #c77253, #a05355, #713c4d, #41283a, #1a151e);
+  }
+
+  .work-div-card {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right bottom, #1b1721, #1b1823, #1b1925, #1b1a27, #1b1b29, #1b1b29, #1b1b29, #1b1b29, #1b1a27, #1b1925, #1b1823, #1b1721);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #101010;
+    transition: 1s;
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .t2 {
+    text-align: center;
+    margin: 6vh 0 6vh 0;
+  }
+
+  #contact {
+    margin: 0 auto 8vh auto ;
+    text-align: start;
+  }
+
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-subdiv {
+    width: 80%;
+  }
+
+  footer {
+    margin: 5vh 1vw 3vh 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div {
+    width: 80vw;
+  }
+}
+
+
+@media (max-width: 425px) {
+
+  #main-img {
+    background-image: url(./img/code-wp.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  #about {
+    margin-top: -10vh;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0rem;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 0px 15px #101010;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+    border-radius: 0px;
+  }
+
+  #menu a {
+    font-size: small;
+  }
+
+  #menu img {
+    width: 2rem;
+  }
+
+  #menu a[href="#"] {
+    display: none;
+  }
+
+  .prof-description {
+    width: 80%;
+    margin: auto;
+    text-align: justify !important;
+  }
+
+  .certs-exp-div {
+    width: 100%;
+    margin: 6vh 0 6vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certs-div, .exp-div {
+    width: 90%;
+  }
+
+  .exp-subdiv {
+    margin-bottom: 5vh;
+  }
+
+  .exp-subdiv-ap-display {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .exp-subdiv-ap-display ul {
+    margin: 0;
+  }
+
+  .exp-subdiv-ap h4 {
+    margin-top: 4rem;
+  }
+
+  .vertical-gap {
+    width: 90vw;
+    height: 2px;
+    background-image: linear-gradient(to right, #120b10, #3b222b, #69383e, #975249, #bf734c, #c2734e, #c47251, #c77253, #a05355, #713c4d, #41283a, #1a151e);
+  }
+
+  .work-div-card {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right bottom, #1b1721, #1b1823, #1b1925, #1b1a27, #1b1b29, #1b1b29, #1b1b29, #1b1b29, #1b1a27, #1b1925, #1b1823, #1b1721);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #101010;
+    transition: 1s;
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .t2 {
+    text-align: center;
+    margin: 6vh 0 6vh 0;
+  }
+
+  #contact {
+    margin: 0 auto 8vh auto ;
+    text-align: start;
+  }
+
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-subdiv {
+    width: 80%;
+  }
+
+  footer {
+    margin: 5vh 1vw 3vh 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div {
+    width: 80vw;
+  }
+}
