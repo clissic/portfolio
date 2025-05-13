@@ -136,6 +136,27 @@ body {
 .stack span:nth-child(odd) { --glitch-translate: 8px; }
 .stack span:nth-child(even) { --glitch-translate: -8px; }
 
+.stack-small {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.stack-small span{
+  color: white;
+  font-weight: 600;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 2vw;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
 @keyframes stack {
   0% {
     opacity: 0;
@@ -259,7 +280,7 @@ body {
 .prof-description {
   width: 60%;
   margin: 10vh auto 0 auto;
-  text-align: justify !important;
+  text-align: center;
 }
 
 .prof-description a {
@@ -275,6 +296,15 @@ body {
   font-weight: 700;
   text-decoration: none;
   background-image: linear-gradient(to bottom, #ffac22, #f5a31c, #ea9a17, #e09110, #d68809, #cb8106, #c17903, #b67200, #a96a00, #9d6200, #905b00, #845300);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-matrix {
+  font-weight: 700;
+  text-decoration: none;
+  background-image: linear-gradient(180deg,rgba(16, 64, 15, 1) 0%, rgba(33, 143, 27, 1) 50%, rgba(55, 230, 46, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -762,6 +792,11 @@ footer {
   justify-content: end;
 }
 
+.flex-description {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media (max-width: 1024px) {
 
   #menu {
@@ -798,7 +833,7 @@ footer {
   .prof-description {
     width: 80%;
     margin: auto;
-    text-align: justify !important;
+    text-align: center;
   }
 
   .certs-exp-div {
@@ -931,7 +966,7 @@ footer {
   .prof-description {
     width: 80%;
     margin: auto;
-    text-align: justify !important;
+    text-align: center;
   }
 
   .certs-exp-div {
@@ -1056,7 +1091,7 @@ footer {
   .prof-description {
     width: 80%;
     margin: auto;
-    text-align: justify !important;
+    text-align: center;
   }
 
   .certs-exp-div {
