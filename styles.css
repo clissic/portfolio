@@ -822,6 +822,27 @@ footer {
     margin-top: -10vh;
   }
 
+  .stack-small {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.stack-small span{
+  color: white;
+  font-weight: 600;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 4vw;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
   .main-head {
     padding-top: 20vw;
   }
