@@ -576,6 +576,70 @@ body {
   width: 25%;
 }
 
+.work-div-card-startup {
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right bottom, #2c1f00, #312301, #362701, #3c2b01, #412f01, #463401, #4c3901, #513e01, #574501, #5d4c01, #635300, #695b00);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px #101010;
+  transition: 1s;
+  padding: 1rem;
+  width: 25%;
+}
+
+.glow-card {
+  position: relative;
+  background-color: #1c1c1c;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 0%, transparent 60%);
+  animation: fireGlow 6s infinite linear;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+@keyframes fireGlow {
+  0% {
+    transform: translate(-100%, -100%) scale(.7);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(.9);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(0%, 0%) scale(1.1);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(50%, 50%) scale(.9);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(100%, 100%) scale(.7);
+    opacity: 0.3;
+  }
+}
+
+.startup-logo{
+  width: 30%;
+}
+
 .background-i {
   position: absolute;
   z-index: -1;
