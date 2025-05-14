@@ -17,6 +17,63 @@ body {
   margin: 0;
 }
 
+/* SISTEMA DE TAGS */
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  vertical-align: super;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  color: white;
+}
+
+.prueba {
+  background-image: linear-gradient(to right bottom, #929292, #9c9c9c, #a6a6a6, #b1b1b1, #bbbbbb, #c4c4c4, #cdcdcd, #d6d6d6, #e0e0e0, #eaeaea, #f5f5f5, #ffffff);
+  color: #000000 !important;
+}
+
+.bronce {
+  background-image: linear-gradient(to right bottom, #be3c00, #bf440e, #bf4c19, #c05323, #c05a2c, #c06135, #c0683e, #c06e47, #c07652, #c07d5e, #bf8569, #be8c75);
+  color: #000000 !important;
+}
+
+.plata {
+  background-image: linear-gradient(to right bottom, #414141, #4a4a4a, #545454, #5d5d5d, #676767, #717171, #7c7c7c, #878787, #959595, #a4a4a4, #b3b3b3, #c2c2c2);
+  color: #000000 !important;
+}
+
+.oro {
+  background-image: linear-gradient(to right bottom, #676400, #797100, #8c7f00, #9f8c00, #b49a00, #c1a509, #cfaf12, #ddba19, #e6c525, #eed030, #f7db3a, #ffe644);
+  color: #000000 !important;
+}
+
+.diamante {
+  background-image: linear-gradient(to right bottom, #4fc3f7, #61c7f6, #70cbf6, #7ecff5, #8bd3f5, #94d6f4, #9dd8f4, #a6dbf3, #aeddf3, #b5dff2, #bce1f2, #c3e3f2);
+  color: #000;
+  box-shadow: #4fc3f7 0 0 10px;
+}
+
+.leyenda {
+  background-image: linear-gradient(to right bottom, #b71c1c, #c02221, #c92727, #d22d2c, #db3232, #e13837, #e73d3d, #ed4342, #f24a49, #f65150, #fb5757, #ff5e5e);
+  color: #000;
+  box-shadow: 0 0 10px #ff0000;
+  animation: pulse-shadow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-shadow {
+  0%, 100% {
+    box-shadow: 0 0 5px #ff4848;
+  }
+  50% {
+    box-shadow: 0 0 15px #a80000;
+  }
+}
+
 /* CARROUSEL INFINITO */
 
 @-webkit-keyframes scroll {
@@ -71,7 +128,6 @@ body {
 
 .slider {
   background: transparent;
-  /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
   height: 100px;
   margin: 12vh auto 0 auto;
   overflow: hidden;
@@ -579,7 +635,7 @@ body {
 .work-div-card-startup {
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(to right bottom, #2c1f00, #312301, #362701, #3c2b01, #412f01, #463401, #4c3901, #513e01, #574501, #5d4c01, #635300, #695b00);
+  background-image: url(./img/ilustracion-fondo-textura-cristal_53876-80620.webp);
   border-radius: 30px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -589,6 +645,12 @@ body {
   padding: 1rem;
   width: 30%;
 }
+
+.work-div-card-startup-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}	
 
 .glow-card {
   position: relative;
@@ -607,8 +669,8 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 0%, transparent 60%);
-  animation: fireGlow 6s infinite linear;
+  background: radial-gradient(circle, rgba(215, 215, 215, 0.6) 0%, transparent 60%);
+  animation: fireGlow 5s infinite linear;
   z-index: -1;
   filter: blur(40px);
 }
@@ -616,23 +678,23 @@ body {
 @keyframes fireGlow {
   0% {
     transform: translate(-100%, -100%) scale(.7);
-    opacity: 0.3;
+    opacity: 0.4;
   }
   25% {
     transform: translate(-50%, -50%) scale(.9);
-    opacity: 0.3;
+    opacity: 0.4;
   }
   50% {
-    transform: translate(0%, 0%) scale(1.1);
-    opacity: 0.3;
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.4;
   }
   75% {
     transform: translate(50%, 50%) scale(.9);
-    opacity: 0.3;
+    opacity: 0.4;
   }
   100% {
     transform: translate(100%, 100%) scale(.7);
-    opacity: 0.3;
+    opacity: 0.4;
   }
 }
 
@@ -648,6 +710,10 @@ body {
   font-size: 15rem;
   transform: rotate(23deg);
   color: rgba(0, 0, 0, 0.3);
+}
+
+.work-div-card {
+  padding: auto;
 }
 
 .work-div-card:hover {
