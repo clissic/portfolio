@@ -587,7 +587,7 @@ body {
   box-shadow: 0px 0px 5px #101010;
   transition: 1s;
   padding: 1rem;
-  width: 25%;
+  width: 30%;
 }
 
 .glow-card {
@@ -637,7 +637,7 @@ body {
 }
 
 .startup-logo{
-  width: 30%;
+  width: 50%;
 }
 
 .background-i {
@@ -979,9 +979,17 @@ footer {
   .contact-subdiv {
     width: 80%;
   }
+
+  .work-div-card-startup {
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .work-div-card-startup {
+    width: 75%;
+  }
 
   #main-img {
     background-image: url(./img/code-wp.png);
